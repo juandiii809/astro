@@ -1,60 +1,21 @@
 ---
-    title: "hola este es el primer post"
+title: "hola este es el primer post"
+update: "7/01/2025"
+author: "juan"
+tags: ["astro","learning"]
 ---
-<!--header -->
-# mi titulo
-## mi segundo titulo
+# my first blog post 
 
-<!-- italic -->
-esto es texto en *italic* text
-<!-- strong -->
-esto es un texto **strong**
-<!-- tachado -->
-esto es un texto ~~tachado~~
+publised : 7/01/2025
 
-<!-- ul -->
-* manzana
-    * apple 2
-* pera
-    * ueujjf
-* uva
-
-1. naranja
-2. sandia
-3. etc
-
-[youtube.com](https://www.youtube.com/?app=desktop&hl=es "custom title")
-
-> esto es una cita 
----
+welcome to the new post about learning astro only with html and css.
 ___
+# what i´ve acomplished 
 
-`print("hello world")`
 
-```python
-x = 10
-print(x)
-```
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
-</html>
-```
-
-| tablas  |dbbdbfb  |hdgue   |
-|---------|:-------:|-------:|
-|col 3    |rigth    | hshyd  |
-|col 2    |left     | hheyy  |
-
-![vscode logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png  "vscode logo")
-
-<!-- github markdown-->
-* [x] task 1
+1. ***installing astro***: first, install and created a new astro project.
+2. ***making pages***: then i learn how to make pages.
+3. ***making blog posts***: this is my first blog post.
+___
+## whats next
+i will finish the astro tutorial and keep adding more posts
