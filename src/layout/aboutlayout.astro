@@ -1,0 +1,69 @@
+---
+import Header from "../componentes/header.astro";
+import Footer from "../componentes/footer.astro";
+import "../estilos/global.css";
+
+const {pageTitle} = Astro.props
+
+const identity = {
+	first_name: "juan",
+	country: "colombia",
+	occupation: "student",
+	hoobies: ["coding","boxing","basketball"]
+};
+
+const skills = ["html", "python", "astro"]
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillcolor = "navy";
+const fontweight = "bold";
+const textcase = "uppercase"
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<style define:vars={{skillcolor, fontweight, textcase}}>
+			h1{
+				color: purple;
+				font-size: 4rem;
+			}
+			.skill{
+				color: var(--skillcolor);
+				font-weight: var(--fontweight);
+				text-transform: var(--textcase);
+			}
+		</style>
+	</head>
+	<body>
+        <Header />
+		<h1>{pageTitle}</h1>
+        <slot />
+
+        <p><b>estudiando sobre astro sus posibilidades y usos</b></p>
+        <p>esta pagina se ira actualizando con el tiempo</p>
+		<p>here a few things about me.</p>
+		<ul>
+			<li>my name is {identity.first_name}</li>
+			<li>i live in {identity.country}</li>
+			{identity.hoobies.length >= 2 &&  
+			<li>two of my hobbies are: {identity.hoobies[0]} and {identity.hoobies[1]}</li>
+			}
+		</ul>
+		<p>my skils are:</p>
+		<ul>
+			{skills.map((skill) =><li class="skill">{skill}</li>)}
+		
+			{happy && <p>i am happy to learn astro!</p>}
+			{finished && <p>i finished this tutorial!</p>}
+			{goal === 3 ? <p>my goal is to finish in 3 days.</p>: <p>my goal is not 3 days.</p>}
+		</ul>
+		<Footer />
+	</body>
+</html>

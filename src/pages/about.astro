@@ -1,18 +1,7 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
-	</head>
-	<body>
-        <a href="/">home</a>
-        <a href="/about">sobre_mi</a>
-        <a href="/blog">blog</a>
-		<h1>primer pagina web con astro</h1>
-
-        <p><b>estudiando sobre astro sus posibilidades y usos</b></p>
-        <p>esta pagina se ira actualizando con el tiempo</p>
-	</body>
-</html>
+---
+import Aboutlayout from "../layout/aboutlayout.astro";
+const pageTitle = "about";
+---
+<Aboutlayout pageTitle = {pageTitle}>
+	<h2>hola </h2>
+</Aboutlayout>

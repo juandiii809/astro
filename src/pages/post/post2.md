@@ -1,4 +1,5 @@
 ---
+layout: ../../layout/markdownpostlayout.astro
 title: "segundo post"
 update: "7/01/2025"
 author: "juan"

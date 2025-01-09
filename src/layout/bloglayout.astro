@@ -1,0 +1,28 @@
+---
+import Header from "../componentes/header.astro";
+import Footer from "../componentes/footer.astro";
+import "../estilos/global.css";
+
+const {pageTitle} = Astro.props;
+---
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+
+        <Header />
+        <h1>{pageTitle}</h1>
+        <p>esta es la pagina inicial de practica.</p>
+        <p>aqui se postea los avances que aprenda sobre astro.</p>
+        <ul>
+            <li><a href="/post/post1/">post-1</a></li>
+            <li><a href="/post/post2/">post-2</post-2></a></li>
+            <li><a href="/post/post3/">post-3</a></li>
+        </ul>
+        <Footer />
+    </body>
+</html>

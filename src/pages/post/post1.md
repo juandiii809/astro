@@ -1,4 +1,5 @@
 ---
+layout: ../../layout/markdownpostlayout.astro
 title: "hola este es el primer post"
 update: "7/01/2025"
 author: "juan"
@@ -10,7 +11,7 @@ publised : 7/01/2025
 
 welcome to the new post about learning astro only with html and css.
 ___
-# what i´ve acomplished 
+# what ive acomplished 
 
 
 1. ***installing astro***: first, install and created a new astro project.
